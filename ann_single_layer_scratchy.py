@@ -21,7 +21,7 @@ np.random.seed(1)
 # weights initialization
 syn0 = 2*np.random.random((3,1)) - 1
 
-for iter in xrange(10000):
+for iter in range(10000):
 
     # forward prop
     l0 = X
@@ -36,5 +36,5 @@ for iter in xrange(10000):
     # weights update
     syn0 += np.dot(l0.T,l1_delta)
 
-print "Trained output:"
-print l1
+print ("Trained output:")
+print (l1)
